@@ -19,7 +19,7 @@ BASE_HEADERS = {
 app = FastAPI(docs_url=None, redoc_url=None)
 
 def find_embed_video_id(html_content: str) -> str | None:
-    match = re.search(r"EMBED_VIDEO_FILE\s*=\s*'([^']*)'", html_content)
+    match = re.search(r"EMBED_VIDEO_FILE\s*=\s*'([^']*)'\s*;", html_content)
     return match.group(1) if match else None
 
 def find_hls_manifest_url(html_content: str) -> str | None:
