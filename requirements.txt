@@ -2,3 +2,4 @@ starlette
 requests
 fastapi
 uvicorn
+httpx
