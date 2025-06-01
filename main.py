@@ -13,7 +13,7 @@ APP_VERSION = "1.0.0" # Example, can be dynamic
 
 BASE_HEADERS = {
     "Cache-Control": "no-cache",
-    "User-Agent": f"RadioStreamService/{APP_VERSION} (compatible; httpx/0.2x.x)"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
 }
 
 app = FastAPI(docs_url=None, redoc_url=None)
